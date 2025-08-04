@@ -3,230 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coca-Cola Legacy - The Experience</title>
+    <title>Coca-Cola Style Landing</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar"></div>
-    
-    <!-- Timeline Navigation -->
-    <div class="timeline-nav" id="timelineNav">
-        <div class="timeline-dot active" data-section="hero">1886</div>
-        <div class="timeline-dot" data-section="origin">Origin</div>
-        <div class="timeline-dot" data-section="evolution">Evolution</div>
-        <div class="timeline-dot" data-section="expansion">Global</div>
-        <div class="timeline-dot" data-section="culture">Culture</div>
-        <div class="timeline-dot" data-section="future">Future</div>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="bubbles-container" id="bubblesContainer"></div>
-        <div class="hero-content">
-            <div class="logo-container">
-                <img src="/images/coca-cola-logo.png" alt="Coca-Cola" class="main-logo">
-                <div class="neon-glow"></div>
-            </div>
-            <div class="can-container">
-                <img src="/images/coca-cola-can.png" alt="Coca-Cola Can" class="hero-can">
-                <div class="can-glow"></div>
-            </div>
-            <h1 class="hero-title">Open Happiness</h1>
-            <p class="hero-subtitle">Discover the Legacy</p>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-                <span>Scroll to explore</span>
-            </div>
+    <header>
+        <div class="logo">CocaCola</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">History</a>
+            <a href="#">Form</a>
+        </nav>
+    </header>
+    <main>
+        <div class="background-cans">
+            <div class="can can-1"></div>
+            <div class="can can-2"></div>
+            <div class="can can-3"></div>
+            <div class="can can-4"></div>
         </div>
-        <div class="fizz-particles" id="fizzParticles"></div>
-    </section>
-
-    <!-- Origin Story Section -->
-    <section class="section origin-section" id="origin">
-        <div class="section-content">
-            <div class="scroll-reveal">
-                <div class="paper-scroll">
-                    <h2 class="section-title">The Origin Story</h2>
-                    <div class="year-badge">1886</div>
-                    <div class="story-content">
-                        <div class="story-text">
-                            <h3>Dr. John S. Pemberton</h3>
-                            <p>In Atlanta, Georgia, a curious pharmacist mixed coca leaves and kola nuts to create a refreshing syrup that would change the world forever.</p>
-                            <div class="formula-ingredients">
-                                <span class="ingredient">Coca Leaves</span>
-                                <span class="plus">+</span>
-                                <span class="ingredient">Kola Nuts</span>
-                                <span class="equals">=</span>
-                                <span class="result">Coca-Cola</span>
-                            </div>
-                        </div>
-                        <div class="vintage-newspaper">
-                            <div class="newspaper-header">Atlanta Journal</div>
-                            <div class="newspaper-date">May 8, 1886</div>
-                            <div class="newspaper-headline">New Refreshing Drink Debuts</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="center-content">
+            <h1 class="brand-title">Coca-Cola</h1>
+            <h2 class="slogan">Open Happiness</h2>
+            <p class="desc">
+                Experience the timeless taste that has brought joy to billions across 200+ countries for over 138 years.<br>
+                From a small pharmacy in Atlanta to the world's most beloved beverage.
+            </p>
+            <button class="legacy-btn">Discover Our Legacy</button>
         </div>
-    </section>
-
-    <!-- Evolution Section -->
-    <section class="section evolution-section" id="evolution">
-        <div class="section-content">
-            <div class="scroll-reveal">
-                <h2 class="section-title">Evolution of the Bottle</h2>
-                <div class="bottle-timeline">
-                    <div class="bottle-era" data-year="1890s">
-                        <div class="bottle-shape bottle-1890"></div>
-                        <span class="era-label">1890s - Straight Sided</span>
-                    </div>
-                    <div class="bottle-era" data-year="1915">
-                        <div class="bottle-shape bottle-1915"></div>
-                        <span class="era-label">1915 - Contour Bottle</span>
-                    </div>
-                    <div class="bottle-era" data-year="1950s">
-                        <div class="bottle-shape bottle-1950"></div>
-                        <span class="era-label">1950s - King Size</span>
-                    </div>
-                    <div class="bottle-era" data-year="modern">
-                        <div class="bottle-shape bottle-modern"></div>
-                        <span class="era-label">Modern - Plastic & Glass</span>
-                    </div>
-                </div>
-                <div class="morph-container">
-                    <div class="morphing-bottle" id="morphingBottle"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Global Expansion Section -->
-    <section class="section expansion-section" id="expansion">
-        <div class="section-content">
-            <div class="scroll-reveal">
-                <h2 class="section-title">War-Time & Global Expansion</h2>
-                <div class="world-map-container">
-                    <div class="world-map">
-                        <div class="expansion-dot" data-country="usa" style="left: 25%; top: 35%;"></div>
-                        <div class="expansion-dot" data-country="europe" style="left: 50%; top: 25%;"></div>
-                        <div class="expansion-dot" data-country="asia" style="left: 75%; top: 40%;"></div>
-                        <div class="expansion-dot" data-country="africa" style="left: 55%; top: 60%;"></div>
-                        <div class="expansion-dot" data-country="australia" style="left: 80%; top: 70%;"></div>
-                    </div>
-                    <div class="war-story">
-                        <div class="military-badge">WWII</div>
-                        <h3>"Coke with every ration pack"</h3>
-                        <p>During World War II, Coca-Cola followed American troops around the world, establishing bottling plants and creating a global presence.</p>
-                        <div class="soldier-silhouette"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pop Culture Section -->
-    <section class="section culture-section" id="culture">
-        <div class="section-content">
-            <div class="scroll-reveal">
-                <h2 class="section-title">Coca-Cola in Pop Culture</h2>
-                <div class="culture-timeline">
-                    <div class="culture-era era-60s">
-                        <div class="retro-tv">
-                            <div class="tv-screen">
-                                <div class="tv-content">60s Hippies</div>
-                            </div>
-                        </div>
-                        <span class="era-text">1960s - Peace & Love</span>
-                    </div>
-                    <div class="culture-era era-80s">
-                        <div class="retro-tv">
-                            <div class="tv-screen">
-                                <div class="tv-content">MTV Era</div>
-                            </div>
-                        </div>
-                        <span class="era-text">1980s - MTV Generation</span>
-                    </div>
-                    <div class="culture-era era-2000s">
-                        <div class="retro-tv">
-                            <div class="tv-screen">
-                                <div class="tv-content">Olympics</div>
-                            </div>
-                        </div>
-                        <span class="era-text">2000s - Olympic Games</span>
-                    </div>
-                </div>
-                <div class="cultural-icons">
-                    <div class="icon-item">
-                        <div class="santa-icon">🎅</div>
-                        <span>Santa Claus Design</span>
-                    </div>
-                    <div class="icon-item">
-                        <div class="music-icon">🎵</div>
-                        <span>Iconic Jingles</span>
-                    </div>
-                    <div class="icon-item">
-                        <div class="sports-icon">⚽</div>
-                        <span>World Cup</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Future Section -->
-    <section class="section future-section" id="future">
-        <div class="section-content">
-            <div class="scroll-reveal">
-                <h2 class="section-title">Sustainability & Future</h2>
-                <div class="future-grid">
-                    <div class="sustainability-card">
-                        <div class="green-icon">♻️</div>
-                        <h3>Plastic Reduction</h3>
-                        <div class="progress-chart">
-                            <div class="chart-bar" data-progress="75"></div>
-                        </div>
-                        <p>75% reduction in plastic usage by 2030</p>
-                    </div>
-                    <div class="sustainability-card">
-                        <div class="green-icon">🌱</div>
-                        <h3>Green Energy</h3>
-                        <div class="leaves-animation"></div>
-                        <p>100% renewable energy in production</p>
-                    </div>
-                    <div class="sustainability-card">
-                        <div class="green-icon">🤖</div>
-                        <h3>Smart Vending</h3>
-                        <div class="ai-visualization"></div>
-                        <p>AI-powered personalized experiences</p>
-                    </div>
-                </div>
-                <div class="earth-container">
-                    <div class="spinning-earth"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="cta-section">
-                <h2>Experience the Legacy. Taste the Future.</h2>
-                <button class="cta-button" id="ctaButton">Shop Coca-Cola</button>
-            </div>
-            <div class="social-links">
-                <a href="#" class="social-link">Facebook</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">TikTok</a>
-            </div>
-            <div class="heartbeat-line" id="heartbeatLine"></div>
-        </div>
-    </footer>
-
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
