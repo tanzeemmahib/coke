@@ -3,32 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coca-Cola Style Landing</title>
+    <title>Coca-Cola Animated Landing</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="animated-bg"></div>
     <header>
-        <div class="logo">CocaCola</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">History</a>
-            <a href="#">Form</a>
-        </nav>
+        <!-- Real Coca-Cola logo: swap color in script.js -->
+        <img src="coca-cola-logo.png" alt="Coca-Cola Logo" class="coca-logo" id="cocaLogo">
     </header>
     <main>
-        <div class="background-cans">
-            <div class="can can-1"></div>
-            <div class="can can-2"></div>
-            <div class="can can-3"></div>
-            <div class="can can-4"></div>
+        <div class="cans">
+            <img src="coca-cola-can.png" class="can can-1" alt="Coca-Cola Can">
+            <img src="coca-cola-can.png" class="can can-2" alt="Coca-Cola Can">
+            <img src="coca-cola-can.png" class="can can-3" alt="Coca-Cola Can">
+            <img src="coca-cola-can.png" class="can can-4" alt="Coca-Cola Can">
         </div>
         <div class="center-content">
-            <h1 class="brand-title">Coca-Cola</h1>
-            <h2 class="slogan">Open Happiness</h2>
-            <p class="desc">
-                Experience the timeless taste that has brought joy to billions across 200+ countries for over 138 years.<br>
-                From a small pharmacy in Atlanta to the world's most beloved beverage.
-            </p>
+            <h2 class="typing" id="typeOpen"></h2>
+            <p class="typing" id="typeDesc"></p>
             <button class="legacy-btn">Discover Our Legacy</button>
         </div>
     </main>
